@@ -3,9 +3,9 @@
 
 class CCar
 {
-//Á¢±Ù Á¦¾î Áö½ÃÀÚ¸¦ ¸í½ÃÇÏÀÚ
+//ì ‘ê·¼ ì œì–´ ì§€ì‹œìžë¥¼ ëª…ì‹œí•˜ìž
 public:
-	//¸â¹ö ÇÔ¼ö
+	//ë©¤ë²„ í•¨ìˆ˜
 	void Driving()
 	{
 		std::cout << "Driving" << std::endl;
@@ -15,7 +15,7 @@ private:
 	{
 		std::cout << "Break" << std::endl;
 	}
-	//¸â¹ö º¯¼ö
+	//ë©¤ë²„ ë³€ìˆ˜
 	int m_iSpeed;
 	int m_iSize;
 	
@@ -23,39 +23,40 @@ private:
 
 void main()
 {
-	//Å¬·¡½º - °´Ã¼¸¦ ±¸¼ºÇÏ´Âµ¥ ÇÊ¿äÇÑ µ¥ÀÌÅÍ¿Í µ¥ÀÌÅÍ¸¦ ´Ù·ç´Â ±â´ÉÀ» ÇÑµ¥ ¹­¾î³õÀº °÷
+	//í´ëž˜ìŠ¤ - ê°ì²´ë¥¼ êµ¬ì„±í•˜ëŠ”ë° í•„ìš”í•œ ë°ì´í„°ì™€ ë°ì´í„°ë¥¼ ë‹¤ë£¨ëŠ” ê¸°ëŠ¥ì„ í•œë° ë¬¶ì–´ë†“ì€ ê³³
 	CCar tAvante;
 
-	//±¸Á¶Ã¼¿Í Å¬·¡½ºÀÇ À¯ÀÏÇÑ Â÷ÀÌ - Á¢±ÙÁ¦¾î Áö½ÃÀÚ Â÷ÀÌ
-	//±¸Á¶Ã¼ - default°¡ public
-	//Å¬·¡½º - default°¡ private
+	//êµ¬ì¡°ì²´ì™€ í´ëž˜ìŠ¤ì˜ ìœ ì¼í•œ ì°¨ì´ - ì ‘ê·¼ì œì–´ ì§€ì‹œìž ì°¨ì´
+	//êµ¬ì¡°ì²´ - defaultê°€ public
+	//í´ëž˜ìŠ¤ - defaultê°€ private
 
-	//Á¢±Ù Á¦¾î Áö½ÃÀÚ - private, public, protected
+	//ì ‘ê·¼ ì œì–´ ì§€ì‹œìž - private, public, protected
 	/*
-	private - Å¬·¡½º ¿ÜºÎ Á¢±Ù ºÒ°¡
-	public  - ¸ðµç Á¢±Ù Çã¿ë
-	protected - ¿ÜºÎ¿¡¼­ÀÇ Á¢±ÙÀ» Â÷´ÜÇÏÁö¸¸ »ó¼Ó°ü°è¿¡¼­¸¸ Á¢±Ù Çã¿ë
+	private - í´ëž˜ìŠ¤ ì™¸ë¶€ ì ‘ê·¼ ë¶ˆê°€
+	public  - ëª¨ë“  ì ‘ê·¼ í—ˆìš©
+	protected - ì™¸ë¶€ì—ì„œì˜ ì ‘ê·¼ì„ ì°¨ë‹¨í•˜ì§€ë§Œ ìƒì†ê´€ê³„ì—ì„œë§Œ ì ‘ê·¼ í—ˆìš©
 	*/
 
 
-	//±¸Á¶Ã¼¿Í ¸Þ¸ð¸® ÇÒ´çÇÏ´Â ¹æ½Äµµ ¶È°°À½(°¡Àå Å« ÀÚ·áÇü ±âÁØ)
-	//¸â¹öº¯¼ö¸¸ÀÌ Å¬·¡½ºÀÇ Å©±â¿¡ ¿µÇâÀ» ¹ÌÄ§
-	//¸â¹öº¯¼ö°¡ ¾Æ¿¹ ¾øÀ¸¸é ±âº» 1byteÀ¸·Î ÀâÈû
+	//êµ¬ì¡°ì²´ì™€ ë©”ëª¨ë¦¬ í• ë‹¹í•˜ëŠ” ë°©ì‹ë„ ë˜‘ê°™ìŒ(ê°€ìž¥ í° ìžë£Œí˜• ê¸°ì¤€)
+	//ë©¤ë²„ë³€ìˆ˜ë§Œì´ í´ëž˜ìŠ¤ì˜ í¬ê¸°ì— ì˜í–¥ì„ ë¯¸ì¹¨
+	//ë©¤ë²„ë³€ìˆ˜ê°€ ì•„ì˜ˆ ì—†ìœ¼ë©´ ê¸°ë³¸ 1byteìœ¼ë¡œ ìž¡íž˜
 	std::cout << sizeof(CCar) << std::endl;
 
-	//°´Ã¼ Æ÷ÀÎÅÍ Çü½ÄÀ» »ç¿ëÇÒ ¶§ ±¸Á¶Ã¼¿Í ¶È°°ÀÌ ->¿¬»êÀÚ¸¦ »ç¿ëÇØ¼­ Á¢±Ù
+	//ê°ì²´ í¬ì¸í„° í˜•ì‹ì„ ì‚¬ìš©í•  ë•Œ êµ¬ì¡°ì²´ì™€ ë˜‘ê°™ì´ ->ì—°ì‚°ìžë¥¼ ì‚¬ìš©í•´ì„œ ì ‘ê·¼
 
 
-	//Å¬·¡½º 4´ë¼Ó¼º - Information hiding, Encapsulation, Inheritance, Polymorphism
+	//í´ëž˜ìŠ¤ 4ëŒ€ì†ì„± - Information hiding, Encapsulation, Inheritance, Polymorphism
 	/*
-	Information hiding - ±âº» ¸â¹ö Á¢±ÙÀ» privateÀ¸·Î µÎ¾î ¿ÜºÎ·ÎºÎÅÍ ¿øÄ¡ ¾Ê´Â µ¥ÀÌÅÍ º¯°æÀ» ¸·°Ú´Ù´Â ÀÇ¹Ì, ÇÔ¼ö¸¦ ÅëÇØ µ¥ÀÌÅÍ¸¦ Á¦¾î ÇÏ°Ú´Ù´Â °Í
+	Information hiding - ê¸°ë³¸ ë©¤ë²„ ì ‘ê·¼ì„ privateìœ¼ë¡œ ë‘ì–´ ì™¸ë¶€ë¡œë¶€í„° ì›ì¹˜ ì•ŠëŠ” ë°ì´í„° ë³€ê²½ì„ ë§‰ê² ë‹¤ëŠ” ì˜ë¯¸, í•¨ìˆ˜ë¥¼ í†µí•´ ë°ì´í„°ë¥¼ ì œì–´ í•˜ê² ë‹¤ëŠ” ê²ƒ
 	
-	Encapsulation - µ¥ÀÌÅÍ¿Í µ¥ÀÌÅÍ¸¦ ´Ù·ç´Â ±â´ÉÀ» ÇÏ³ª·Î ¹­¾î ¿ÜºÎ·ÎºÎÅÍ ¼û±â´Â °Í
+	Encapsulation - ë°ì´í„°ì™€ ë°ì´í„°ë¥¼ ë‹¤ë£¨ëŠ” ê¸°ëŠ¥ì„ í•˜ë‚˜ë¡œ ë¬¶ì–´ ì™¸ë¶€ë¡œë¶€í„° ìˆ¨ê¸°ëŠ” ê²ƒ
 
-	Inheritance - Å¬·¡½º ³¢¸® °øÅëµÈ µ¥ÀÌÅÍ¸¦ ¿äÇÑ´Ù¸é »ó¼ÓÀ» ÅëÇØ °øÅëµÈ µ¥ÀÌÅÍ¸¦ ¹°·ÁÁÙ ¼ö ÀÖÀ½
-				  ºÎ¸ð´Â ÀÚ½Ä Å¬·¡½ºµéÀÇ °øÅëÁ¡À» ÃßÃâÇÑ Ãß»óÀû Á¸Àç
-				  ÇÏÀ§·Î °¥¼ö·Ï ¼¼ºÐÈ­°¡ ÀÏ¾î³ª°í À§·Î ¿Ã¶ó°¥¼ö·Ï Ãß»óÈ­°¡ ÀÏ¾î³²
-	Polymorphism - °°Àº ÀÌ¸§À¸·Î °¢±â ´Ù¸¥ ±â´ÉÀ» ¼öÇàÇÏ´Â °Í
+	Inheritance - í´ëž˜ìŠ¤ ë¼ë¦¬ ê³µí†µëœ ë°ì´í„°ë¥¼ ìš”í•œë‹¤ë©´ ìƒì†ì„ í†µí•´ ê³µí†µëœ ë°ì´í„°ë¥¼ ë¬¼ë ¤ì¤„ ìˆ˜ ìžˆìŒ
+				  ë¶€ëª¨ëŠ” ìžì‹ í´ëž˜ìŠ¤ë“¤ì˜ ê³µí†µì ì„ ì¶”ì¶œí•œ ì¶”ìƒì  ì¡´ìž¬
+				  í•˜ìœ„ë¡œ ê°ˆìˆ˜ë¡ ì„¸ë¶„í™”ê°€ ì¼ì–´ë‚˜ê³  ìœ„ë¡œ ì˜¬ë¼ê°ˆìˆ˜ë¡ ì¶”ìƒí™”ê°€ ì¼ì–´ë‚¨
+	Polymorphism - ê°™ì€ ì´ë¦„ìœ¼ë¡œ ê°ê¸° ë‹¤ë¥¸ ê¸°ëŠ¥ì„ ìˆ˜í–‰í•˜ëŠ” ê²ƒ
 	*/
 
 }
+
